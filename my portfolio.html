@@ -1,0 +1,277 @@
+<!DOCTYPE html >
+<html lang ="en">
+<head>
+<title> MY PORTFOLIO </title>
+
+<!--Link to AOS CSS-->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!--Link to AOS JavaScript-->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!--link to font awesome for icons-->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<style>
+      body{
+            background-color:#3a3939;
+            background-size:cover;
+            font-family:Arial, sans-serif;
+            line-height:1.6;
+            color:#fff;
+      }
+
+      /*header and responsive navbar*/
+      header{
+            display:grid;  
+            justify-content:space-between;
+            align-items:center;
+            padding:10px 20px;
+            width:100%;
+            background-color: #222;
+      }
+      header h1{
+            font-size:2.5rem;
+            color:aqua;
+            }
+
+            /*navigation*/
+            nav{
+                  display:flex;
+                  gap:15px;
+                  margin:20px;
+            }
+
+            nav a {
+                
+                  color:rgb(239, 232, 232);
+                  font-weight:bold;
+                  transition:color 2s ease;
+                  text-decoration:none;
+                  padding:8px;
+            }
+            nav a:hover{
+                  text-decoration:underline;
+                  color:#ffa500;
+            }
+            h2,h3,h4{
+                  color:lightblue;
+                  margin:10px;
+            }
+
+            /*hamburger menu styling*/
+            .hamburger {
+                  display:none;
+                  font-size:1.5em;
+                  cursor:pointer;
+            }
+
+            .navbar-links{
+                  display:flex;
+                  gap:15px;
+            }
+
+            /*responsive styling*/
+            @media(max-width:768px){
+                  .navbar-links{
+                        display:none;
+                        flex-direction:column;
+                        gap:10px;
+                        background-color:#333;
+                        text-align:center;
+                  }
+
+                  .navbar-links.active{
+                        display:flex;
+                  }
+
+                  .hamburger{
+                        display:block;
+                  }
+            }
+
+            
+            /*Sections*/
+            #AboutMe,#Hobbies,#Projects,#Contact{
+                  width:80%;
+                  max-width:800px;
+                  background-color:rgba(0,0,0,0,7);
+                  border-radius:10px;
+                  padding:20px;
+                  margin-bottom:20px;
+                  box-shadow:0 4px 8px rgba(0,0,0,0.5);
+            }
+
+            h2{
+                  color:lightblue;
+            }
+
+            /*icons and animations*/
+            .icon{
+                  color:#ffd700;
+                  margin-right:10px;
+            }
+
+            /*table styling*/
+            table{
+                  color:whitesmoke;
+                  border-color:white;
+                  border-collapse:collapse;
+                  margin-top:10px;
+                  width:100%;
+            }
+            table,th,td{
+                  border:1px solid #444;
+                  padding:8px;
+            }
+            th{
+                  background-color:#555;
+                  color:#ffd700;
+            }
+
+            /*footer*/
+      footer{
+            font-size:0.9em;
+            text-align:center;
+            padding:5px;
+            color:#ddd700;
+            background-color:#222;
+            /*position:fixed;*/
+            left:0;
+            bottom:0;
+            width:100%;
+      }
+</style> 
+</head>
+
+<body>
+      <!--header with responsive navbar-->
+      <header>
+<h1 data-aos="zoom-in">MABERI MIRACLE MUKISA</h1>
+<i class="fas fa-bars hamburger" onclick="toggleNavbar()"></i>
+
+<!--navigation with icons-->
+<nav>
+      <div class="navbar-links">
+      <a href="#About_Me"><i class="fas fa-user icon"></i> About Me</a>
+      <a href="#Hobbies"><i class="fas fa-gamepad icon"></i> Hobbies</a>
+      <a href="#Projects"><i class="fas fa-code icon"></i> Projects</a>
+      <a href="#Contact"><i class="fas fa-envelope icon"></i> Contact</a>
+      </div>
+</nav>
+</header>
+
+<!--About me-->
+<section id="About_Me" data-aos="zoom-in" data-delay="200">
+<h2 >About_Me</h2>
+<p> I am a 21 year old male.Born on 28th April 2003 to the Mukisa family.
+    I have two siblings, an elder brother and a young sister.
+    I went to Namirembe Parents School for my primary school.
+     Then later joined Makerere College School for my highschool. 
+     Spent seven beautiful years in that school. 
+     Then, i joined ISBAT University to continue my education journey, where i am pursuing a degree in AI&ML.
+     My passion for computing dates back in primary when i discovered my liking for elecrtronics and systems. 
+     I am aspiring to make great contributions to the tech world by creating solutions for short term and long term problems. 
+     I am also looking forward to developing systems that are going to further make the world a safer and better place for life. </p>
+     
+<img src = "C:\Users\DELL\HTML\Downloads\WhatsApp Image 2024-10-29 at 10.22.55_4d2c1dc0.jpg" alt="My Portrait" width="300">     
+</section>
+
+
+<!--hobbies section-->
+<section id="Hobbies" data-aos="fade-left" data-aos-delay="200">
+      <h2>Hobbies</h2>
+<ul>
+      <li><i class="fas fa-futbol icon"></i> Football </li>
+ <img src="C:\Users\DELL\HTML\Downloads\chelsea 2.jpeg" alt="Chelsea">
+      <li><i class="fas fa-gamepad icon"></i> Playing games </li>
+<img src="C:\Users\DELL\HTML\Downloads\games 2.jpeg" alt="Playing games">
+      <li><i class="fas fa-tv icon"></i> Watching series and news </li>
+ <img src="C:\Users\DELL\HTML\Downloads\series.jpeg" alt="watching series">
+      <li><i class="fas fa-praying-hands icon"></i> Praying </li>
+<img src="C:\Users\DELL\HTML\Downloads\praying.jpeg" alt="Praying">
+      <li><i class="fas fa-laptop-code icon"></i> Coding and programming</li>
+<img src ="C:\Users\DELL\HTML\Downloads\OIP.jpeg" alt="Coding">
+</ul>
+
+<table border="1">
+      <caption> Top five favorite series</caption>
+      <tr>
+            <th>Title</th>
+            <th>No. of seasons</th>
+            <th>Rating</th>
+      </tr>
+      <tr>
+            <td>Umbrella Academy</td>
+            <td>3</td>
+            <td>9</td>
+      </tr>
+      <tr>
+            <td>House of the Dragons</td>
+            <td>2</td>
+            <td>9</td>
+      </tr>
+      <tr>
+            <td>The Neighborhood</td>
+            <td>6</td>
+            <td>8</td>
+      </tr>
+      <tr>
+            <td>Game of Thrones</td>
+            <td>8</td>
+            <td>8</td>
+      </tr>
+      <tr>
+            <td>Money Heist</td>
+            <td>5</td>
+            <td>9</td>
+      </tr>
+</table>
+</section>
+
+<!--Project Section-->
+<section id = "Projects" data-aos="fade-left">
+      <h2> PROJECTS </h2>
+      <p> I am currently working on a school system, using C++, that automatically calculates student's marks.
+            The system will also be able to rank students according to average marks and will also generate comments based on their performance
+            The system aims at streamlining academic evaluation, making it more efficient an dinsightful for both teachers and students</p>
+            <p>After this one, i will then focus on a system that will be used in any dining areas around the world. 
+                  The main purpose of the sytem will be to reduce time wasted while picking orders, working on them and delivering them.</p>
+</section>
+
+<!--contact section-->
+<section id="Contact" data-aos="fade-up" >
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-envelope icon"></i> email:<a href= "mailto:maberimiracle050@gmail.com" style="color:#ffd700;" >maberimiracle050@gmail.com</a></p>
+      <p><i class="fas fa-phone icon"></i>Phone:<a href="tel:+256772715917" style="color:#ffd700;">+256772715917</a></p>
+      <p><i class="fab fa-whatsapp icon"></i>WhatsApp:<a href="https://wa.me/256708560108" style="color:#ffd700;">+256708560108</a></p>
+      <p><i class="fab fa-twitter icon"></i> X:<a href="https://twitter.com/Mess_CFC" target="_blank" style="color:#ffd700;">@Mess_CFC</a></p>
+      <p><i class="fab fa-instagram icon"></i>Intagram:<a href="https://instgram.com/miracle_mukisa" target="_blank" style="color:#ffd700;">@mukisa_miracle</a> </p>
+</section>
+
+<!--footer-->
+<footer>
+      <p>&copy;2024 Maberi Miracle Mukisa. All rights reserved</p>
+</footer>
+
+<!--AOS initialization and JavaScript for Navbar toggle-->
+<script>
+      //initialise AOS
+      AOS.init({
+            duration:1000,
+            twice:true
+      })
+
+      //Navbar toggle function
+      function toggleNavbar(){
+            document.querySelection(".navbar-links").classList.toggle("active");
+      }
+
+</script>
+
+</body>
+</html>
