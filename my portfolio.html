@@ -1,7 +1,7 @@
 <!DOCTYPE html >
 <html lang ="en">
 <head>
-<title> MY PORTFOLIO </title>
+<title> MABERI MIRACLE </title>
 
 <!--Link to AOS CSS-->
 <link rel="stylesheet"
@@ -17,12 +17,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
 
 
 <style>
+      /*general styling*/
       body{
             background-color:#3a3939;
-            background-size:cover;
-            font-family:Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height:1.6;
-            color:#fff;
+            color:white;
       }
 
       /*header and responsive navbar*/
@@ -32,12 +32,155 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
             align-items:center;
             padding:10px 20px;
             width:100%;
-            background-color: #222;
+            background-color:#222;
+            background-size:cover;
+            background-position:center;
       }
       header h1{
             font-size:2.5rem;
             color:aqua;
             }
+
+            /*name animation*/
+            .animated-name{
+                  display:inline-flex;
+                  font-size:3rem;
+                  font-weight:bold;
+                  color:aqua;
+                  justify-content:flex-start;
+                  margin-top:20px;
+            }
+
+            /*letter animation*/
+            .animated-name span{
+                  opacity:0;
+                  transform:translateY(20px);
+                  animation:fadeInUp 0.5s ease forwards;
+            }
+
+            /*stagger the animation for each letter*/
+            .animated-name span:nth-child(1){
+                  animation-delay:0s;
+            }
+            .animated-name span:nth-child(2){
+                  animation-delay:0.1s;
+            }
+            .animated-name span:nth-child(3){
+                  animation-delay:0.2s;
+            }
+            .animated-name span:nth-child(4){
+                  animation-delay:0.3s;
+            }
+            .animated-name span:nth-child(5){
+                  animation-delay:0.4s;
+            }
+            .animated-name span:nth-child(6){
+                  animation-delay:0.5s;
+            }
+            .animated-name span:nth-child(7){
+                  animation-delay:0.6s;
+            }
+            .animated-name span:nth-child(8){
+                  animation-delay:0.7s;
+            }
+            .animated-name span:nth-child(9){
+                  animation-delay:0.8s;
+            }
+            .animated-name span:nth-child(10){
+                  animation-delay:0.9s;
+            }
+            .animated-name span:nth-child(11){
+                  animation-delay:1.0s;
+            }
+            .animated-name span:nth-child(12){
+                  animation-delay:1.1s;
+            }
+            .animated-name span:nth-child(13){
+                  animation-delay:1.2s;
+            }
+            .animated-name span:nth-child(14){
+                  animation-delay:1.3s;
+            }
+            .animated-name span:nth-child(15){
+                  animation-delay:1.4s;
+            }
+            .animated-name span:nth-child(16){
+                  animation-delay:1.5s;
+            }
+            .animated-name span:nth-child(17){
+                  animation-delay:1.6s;
+            }
+            .animated-name span:nth-child(18){
+                  animation-delay:1.7s;
+            }
+            .animated-name span:nth-child(19){
+                  animation-delay:1.8s;
+            }
+            .animated-name span:nth-child(20){
+                  animation-delay:1.9s;
+            }
+            .animated-name span:nth-child(21){
+                  animation-delay:2.0s;
+            }
+            .animated-name span:nth-child(22){
+                  animation-delay:2.1s;
+            }
+            .animated-name span:nth-child(23){
+                  animation-delay:2.2s;
+            }
+            .animated-name span:nth-child(24){
+                  animation-delay:2.3s;
+            }
+            .animated-name span:nth-child(25){
+                  animation-delay:2.4s;
+            }
+            .animated-name span:nth-child(26){
+                  animation-delay:2.5s;
+            }
+            .animated-name span:nth-child(27){
+                  animation-delay:2.6s;
+            }
+            .animated-name span:nth-child(28){
+                  animation-delay:2.7s;
+            }
+            .animated-name span:nth-child(29){
+                  animation-delay:2.8s;
+            }
+            .animated-name span:nth-child(30){
+                  animation-delay:2.9s;
+            }
+            .animated-name span:nth-child(31){
+                  animation-delay:3.0s;
+            }
+            .animated-name span:nth-child(32){
+                  animation-delay:3.1s;
+            }
+            .animated-name span:nth-child(33){
+                  animation-delay:3.2s;
+            }
+            .animated-name span:nth-child(34){
+                  animation-delay:3.3s;
+            }
+            .animated-name span:nth-child(35){
+                  animation-delay:3.4s;
+            }
+            .animated-name span:nth-child(36){
+                  animation-delay:3.5s;
+            }
+
+
+              /*Keyframe animation*/
+              @keyframes fadeInUp{
+                  0%{
+                        opacity:0;
+                        transform:translateY(20px);
+                  }
+                  100%{
+                        opacity:1;
+                        transform:translateY(o);
+                  }
+            }
+
 
             /*navigation*/
             nav{
@@ -63,6 +206,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
                   margin:10px;
             }
 
+           
+
+           /*smooth scroll navigation*/
+            html{
+                  scroll-behavior:smooth;
+            }
+
             /*hamburger menu styling*/
             .hamburger {
                   display:none;
@@ -75,7 +225,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
                   gap:15px;
             }
 
-            /*responsive styling*/
+            /*responsive styling for smaller screens*/
             @media(max-width:768px){
                   .navbar-links{
                         display:none;
@@ -94,20 +244,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
                   }
             }
 
+
+            /*container styling*/
+            .animated-name{
+                  display:inline-flex;
+                  font-size:3rem;
+                  font-weight:bold;
+                  color:aqua;
+            }      
+
+            /*letter animation*/
+            .animated-name span{
+                  opacity:0;
+                  transform:translateY(20px);
+                  animation:fadeInUp 0.5s ease forwards;
+            }
+            
+
             
             /*Sections*/
-            #AboutMe,#Hobbies,#Projects,#Contact{
-                  width:80%;
+            #AboutMe,#Hobbies,#Projects,#Skills,#Contact{
+                  width:100%;
                   max-width:800px;
                   background-color:rgba(0,0,0,0,7);
-                  border-radius:10px;
+                  border-radius:5px;
                   padding:20px;
-                  margin-bottom:20px;
+                  margin-bottom:10px;
                   box-shadow:0 4px 8px rgba(0,0,0,0.5);
             }
 
             h2{
                   color:lightblue;
+            }
+
+
+
+            /*size for language icons*/
+            ul li i{
+                  font-size:3rem;
+                  color:#ffd700;
+                  margin-right:10px;
+            }
+
+            ul li i:hover{
+                  color:aqua;
+                  transform:scale(1.2);
             }
 
             /*icons and animations*/
@@ -121,11 +302,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
                   color:whitesmoke;
                   border-color:white;
                   border-collapse:collapse;
-                  margin-top:10px;
+                  margin-top:50px;
                   width:100%;
             }
             table,th,td{
-                  border:1px solid #444;
+                  border:5px solid #444;
                   padding:8px;
             }
             th{
@@ -140,15 +321,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
             padding:5px;
             color:#ddd700;
             background-color:#222;
-            /*position:fixed;*/
+            position:inherit;
             left:0;
             bottom:0;
             width:100%;
       }
 </style> 
+
+<!--dynamic typing effect for name-->
+<script
+src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+<script>
+      new TypeIt("#animated-name",{
+            strings:"MABERI MIRACLE MUKISA",
+            speed:100,
+            loop:false,
+      }).go();
+       </script>
+       <h1 id="animated-name" style="color:aqua;"></h1>
+
 </head>
 
 <body>
+
       <!--header with responsive navbar-->
       <header>
 <h1 data-aos="zoom-in">MABERI MIRACLE MUKISA</h1>
@@ -160,34 +355,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
       <a href="#About_Me"><i class="fas fa-user icon"></i> About Me</a>
       <a href="#Hobbies"><i class="fas fa-gamepad icon"></i> Hobbies</a>
       <a href="#Projects"><i class="fas fa-code icon"></i> Projects</a>
+      <a href="#Skills"><i class="fas fa-code icon"></i> Skills</a>
       <a href="#Contact"><i class="fas fa-envelope icon"></i> Contact</a>
       </div>
 </nav>
 </header>
 
+<!--Animated name-->
+<section id="About_Me" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="200" style="padding:100px;margin:20px">
+      <h2 >About_Me</h2>
+<div class="animated-name" id="animated-name">
+      <span>I</span> &nbsp; <span>A</span><span>M</span> &nbsp; <span>A</span><span>N</span> &nbsp; <span>A</span>
+      <span>R</span><span>T</span><span>I</span><span>F</span><span>I</span> <span>C</span><span>I</span><span>A</span>
+      <span>L</span> &nbsp; <span>I</span><span>N</span><span>T</span><span>E</span><span>L</span>
+      <span>L</span><span>I</span><span>G</span><span>E</span><span>N</span><span>C</span>
+      <span>E</span> &nbsp; <span>E</span><span>N</span><span>G</span><span>I</span><span>N</span><span>E</span>
+      <span>E</span><span>R</span>
+      </div>
 <!--About me-->
-<section id="About_Me" data-aos="zoom-in" data-delay="200">
-<h2 >About_Me</h2>
 <p> I am a 21 year old male.Born on 28th April 2003 to the Mukisa family.
-    I have two siblings, an elder brother and a young sister.
+    I have two siblings.
     I went to Namirembe Parents School for my primary school.
      Then later joined Makerere College School for my highschool. 
-     Spent seven beautiful years in that school. 
+     Spent seven beautiful years in that school(seventh year was the covid year). 
      Then, i joined ISBAT University to continue my education journey, where i am pursuing a degree in AI&ML.
      My passion for computing dates back in primary when i discovered my liking for elecrtronics and systems. 
-     I am aspiring to make great contributions to the tech world by creating solutions for short term and long term problems. 
+     I am an aspiring AI engineer who is eager to make great contributions to the tech world by creating solutions for both short term and long term problems faced by mankind. 
      I am also looking forward to developing systems that are going to further make the world a safer and better place for life. </p>
      
-<img src = "C:\Users\DELL\HTML\Downloads\WhatsApp Image 2024-10-29 at 10.22.55_4d2c1dc0.jpg" alt="My Portrait" width="300">     
+<img src = "C:\Users\DELL\HTML\Downloads\WhatsApp Image 2024-10-29 at 10.22.55_4d2c1dc0.jpg" alt="My Portrait" width="500">     
 </section>
 
 
 <!--hobbies section-->
-<section id="Hobbies" data-aos="fade-left" data-aos-delay="200">
+<section id="Hobbies" data-aos="flip-up" data-aos-duration="1500" data-aos-offset="200"style="padding:100px;margin:20px" >
       <h2>Hobbies</h2>
 <ul>
       <li><i class="fas fa-futbol icon"></i> Football </li>
  <img src="C:\Users\DELL\HTML\Downloads\chelsea 2.jpeg" alt="Chelsea">
+ <img src="C:\Users\DELL\HTML\Downloads\chelsea.jpeg" alt="Chdlsea 2">
       <li><i class="fas fa-gamepad icon"></i> Playing games </li>
 <img src="C:\Users\DELL\HTML\Downloads\games 2.jpeg" alt="Playing games">
       <li><i class="fas fa-tv icon"></i> Watching series and news </li>
@@ -197,7 +403,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
       <li><i class="fas fa-laptop-code icon"></i> Coding and programming</li>
 <img src ="C:\Users\DELL\HTML\Downloads\OIP.jpeg" alt="Coding">
 </ul>
+</section> 
 
+<section id="Top five favourite series" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200" style="padding:100px;margin:20px"> 
 <table border="1">
       <caption> Top five favorite series</caption>
       <tr>
@@ -233,23 +441,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
 </table>
 </section>
 
+
 <!--Project Section-->
-<section id = "Projects" data-aos="fade-left">
+<section id = "Projects" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200" style="padding:100px;margin:20px">
       <h2> PROJECTS </h2>
       <p> I am currently working on a school system, using C++, that automatically calculates student's marks.
             The system will also be able to rank students according to average marks and will also generate comments based on their performance
-            The system aims at streamlining academic evaluation, making it more efficient an dinsightful for both teachers and students</p>
-            <p>After this one, i will then focus on a system that will be used in any dining areas around the world. 
-                  The main purpose of the sytem will be to reduce time wasted while picking orders, working on them and delivering them.</p>
+            The system aims at streamlining academic evaluation, making it more efficient and insightful for both teachers and students</p>
+            <p>After, i will then focus on a dining system that will focus on reducing time wasted in picking orders by the waiters, working on the orders and delivering them to customers. 
+                  With time and constant updates, it will be used around the world after proving to be more efficient and less costly than human labour.</p>
+</section>
+
+
+
+<!--Skills section-->
+<section id="Skills" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="200" style="padding:100px;margin:20px">
+      <h2> Skills</h2>
+      <ul>
+            <li><i class="fab fa-html5"></i>HTML </li>
+            <li><i class="fab fa-css3-alt"></i>CSS </li>
+            <li><i class="fab fa-js"></i>JavaScript </li>
+            <li><i class="fab fa-python"></i>Python </li>
+            <li><i class="fas fa-code"></i>C++ </li>
+            <li><i class="fas fa-database"></i>Databases </li>
+      </ul>
 </section>
 
 <!--contact section-->
-<section id="Contact" data-aos="fade-up" >
+<section id="Contact" data-aos="fade-up" style="padding:100px;margin:20px">
       <h2>Contact Me</h2>
       <p><i class="fas fa-envelope icon"></i> email:<a href= "mailto:maberimiracle050@gmail.com" style="color:#ffd700;" >maberimiracle050@gmail.com</a></p>
       <p><i class="fas fa-phone icon"></i>Phone:<a href="tel:+256772715917" style="color:#ffd700;">+256772715917</a></p>
       <p><i class="fab fa-whatsapp icon"></i>WhatsApp:<a href="https://wa.me/256708560108" style="color:#ffd700;">+256708560108</a></p>
-      <p><i class="fab fa-twitter icon"></i> X:<a href="https://twitter.com/Mess_CFC" target="_blank" style="color:#ffd700;">@Mess_CFC</a></p>
+      <p><i class="fab fa-twitter icon"></i> X:<a href="https://twitter.com/Mess_093" target="_blank" style="color:#ffd700;">@Mess_093</a></p>
       <p><i class="fab fa-instagram icon"></i>Intagram:<a href="https://instgram.com/miracle_mukisa" target="_blank" style="color:#ffd700;">@mukisa_miracle</a> </p>
 </section>
 
@@ -266,12 +490,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
             twice:true
       })
 
+     
       //Navbar toggle function
       function toggleNavbar(){
             document.querySelection(".navbar-links").classList.toggle("active");
       }
 
+
+
+     
+
+
+
+
+
+
 </script>
+
+
+
 
 </body>
 </html>

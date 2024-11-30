@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABERI MIRACLE</title>
+
+    <!-- Link to AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #3a3939;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-image: url('header-bg.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: aqua;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: rgb(239, 232, 232);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            color: #ffa500;
+        }
+
+        /* Progress bar */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 5px;
+            background-color: aqua;
+            z-index: 9999;
+            transition: width 0.1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>MABERI MIRACLE</h1>
+        <nav>
+            <a href="#About_Me">About Me</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Content Sections -->
+    <section id="About_Me" style="padding: 100px; margin: 50px;">
+        <h2>About Me</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <section id="Hobbies" style="padding: 100px; margin: 50px;">
+        <h2>Hobbies</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <section id="Projects" style="padding: 100px; margin: 50px;">
+        <h2>Projects</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <section id="Skills" style="padding: 100px; margin: 50px;">
+        <h2>Skills</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <section id="Contact" style="padding: 100px; margin: 50px;">
+        <h2>Contact</h2>
+        <p>Your content here...</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        window.onscroll = function () {
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollPercentage = (scrollTop / scrollHeight) * 100;
+            document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+        };
+    </script>
+</body>
+</html>
